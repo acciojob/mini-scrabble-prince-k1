@@ -3,7 +3,8 @@ const input = document.getElementById('evaluatedText');
 const head = document.getElementById('letterCount');
 let count = 0;
 input.addEventListener('input' ,()=> {
-	++count;
-	head.innerText = count;
+	let value = input.value.length;
+	head.innerText = value;
+	
 	
 })
